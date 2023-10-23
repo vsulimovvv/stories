@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Title</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main"><div class="demo-stories">
+  <a href="#slide1" data-id="0">
+    <span class="demo-stories-avatar">
+      <img
+        src="https://bisoubx.a-media-test.ru/upload/iblock/1de/v0wfqacbeybgp4jhi36box1lwxxrn52e.png"
+        alt=""
+      />
+    </span>
+    <span class="demo-stories-name">mark_johnson</span>
+  </a>
+  <a href="#slide2" data-id="1">
+    <span class="demo-stories-avatar">
+      <img
+        src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+        alt=""
+      />
+    </span>
+    <span class="demo-stories-name">malenia</span>
+  </a>
+  <a href="#slide3" data-id="2">
+    <span class="demo-stories-avatar">
+      <img
+        src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+        alt=""
+      />
+    </span>
+    <span class="demo-stories-name">malenia</span>
+  </a>
+</div>
+
+<!-- Stories Slider -->
+<div class="stories-slider stories-slider-perspective">
+  <div
+    class="swiper swiper-3d js-swiper-pagination-progress-with-thumbs-main-2"
+  >
+    <div class="swiper-wrapper">
+      <!--USER 1-->
+      <div class="swiper-slide" data-hash="slide1">
+        <div class="swiper js-swiper-pagination-progress-with-thumbs-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/mark.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">mark_johnson</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-1.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/mark.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">mark_johnson</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-3.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/mark.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">mark_johnson</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-2.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/mark.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">mark_johnson</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <video
+                  class="mainscreen__video"
+                  autoplay=""
+                  muted=""
+                  src="https://stories-slider.uiinitiative.com/video.mp4"
+                  playsinline=""
+                  preload="metadata"
+                ></video>
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+          </div>
+          <!--PAGINATION-->
+          <div class="stories-slider-pagination"></div>
+        </div>
+      </div>
+      <!--USER 2-->
+      <div class="swiper-slide" data-hash="slide2">
+        <div class="swiper js-swiper-pagination-progress-with-thumbs-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-1.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-3.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-2.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <video
+                  class="mainscreen__video"
+                  autoplay=""
+                  muted=""
+                  src="https://stories-slider.uiinitiative.com/video.mp4"
+                  playsinline=""
+                  preload="metadata"
+                  loop
+                ></video>
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+          </div>
+          <!--PAGINATION-->
+          <div class="stories-slider-pagination"></div>
+        </div>
+      </div>
+      <!--USER 3-->
+      <div class="swiper-slide" data-hash="slide3">
+        <div class="swiper js-swiper-pagination-progress-with-thumbs-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-1.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-3.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <img
+                  src="https://stories-slider.uiinitiative.com/images/food-2.jpg"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stories-slider-user">
+                <div class="stories-slider-user-avatar">
+                  <img
+                    src="https://stories-slider.uiinitiative.com/avatars/malenia.jpg"
+                  />
+                </div>
+                <div class="stories-slider-user-name">malenia</div>
+                <div class="stories-slider-user-date">2h</div>
+              </a>
+              <div class="stories-slider-actions">
+                <button class="stories-slider-close-button"></button>
+              </div>
+              <div class="stories-slider-content">
+                <video
+                  class="mainscreen__video"
+                  autoplay=""
+                  muted=""
+                  src="https://stories-slider.uiinitiative.com/video.mp4"
+                  playsinline=""
+                  preload="metadata"
+                  loop
+                ></video>
+              </div>
+              <div
+                class="stories-slider-button stories-slider-button-prev"
+              ></div>
+              <div
+                class="stories-slider-button stories-slider-button-next"
+              ></div>
+            </div>
+          </div>
+          <!--PAGINATION-->
+          <div class="stories-slider-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- GSAP -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
